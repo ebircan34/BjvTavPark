@@ -1,0 +1,238 @@
+USE [PARK_DB]
+GO
+
+/****** Object:  View [dbo].[Abonelik_Uzatim_Geliri]    Script Date: 12/12/2023 12:13:44 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE view [dbo].[Abonelik_Uzatim_Geliri] as
+--Abone Uzatimlari Nakit
+  SELECT GF.Ztpkt as    Odeme_Zamani,GF.GerNr as Cihaz_No,GER.GerBez as Cihaz_Ad,GER.GerKBez as Cihaz_KisaAd,
+         GER.GerTyp     as Cihaz_Tur,PH.PhNr as Otopark_No,PH.PhBez    as Otopark_Ad,PH.PhKBez as Otopark_KisaAd,  
+         GF.GfNr as TransactionNo,GF.RechnungsNr as  FisNo,GF.PersonalNr     as      PersonelNo,PERSONAL.Nachname as    Operator_Isim,
+         PERSONAL.Vorname as Operator_Isim2, GFPOS.Umsatz as Gelir,GFPOS.UmsatzNetto as      Net_Gelir,
+         ARTIK.ArtikNr  as    Kart_Tanim_No, SDSYSTXT.Txt asKart_Tanim_Kategori,ARTIK.ArtikBez as    Kart_Tanim_Ad,
+         ARTIK.ArtikKbez as Kart_Tanim_KisaAd,VK.VonZtpkt as Baslangic_Tarihi,VK.BisZtpkt as Bitis_Tarihi,
+         VK.PersonalNrVk as Personel_SatisNo,VK.ZimmerNr as OdaNo,VK.FolioNr as      FolyoNo,VK.Name   as Satis_Isim,
+         VK.PreisProTag as GunlukGelir,VK.KartenNrVon as Kartin_Baslangic_Tarihi,VK.KartenNrBis   as    Kartin_Bitis_Tarihi,
+         GF.Name as Ad,GF.Strasse as Cadde,GF.Ort as Sehir,GF.SteuerNr as VergiNo,  datediff(dd, VK.VonZtpkt, VK.BisZtpkt) + 1  as GunSayisi
+            ,           'Nakit' as OdemeTuru
+          FROM GF WITH (NOLOCK),   
+         GFPOS WITH (NOLOCK),
+         VK WITH (NOLOCK), 
+         ARTIK WITH (NOLOCK), 
+         SDSYSARTIK WITH (NOLOCK), 
+         PH WITH (NOLOCK),   
+         GER WITH (NOLOCK),
+         PERSONAL WITH (NOLOCK),
+         SDSYSTXT WITH (NOLOCK),
+         PARAM WITH (NOLOCK),
+         SDSYSKART WITH (NOLOCK),
+         BZLGPOS WITH (NOLOCK),   
+         BARBZLG WITH (NOLOCK)
+   WHERE ( GFPOS.Ztpkt = GF.Ztpkt ) and  
+         ( GFPOS.GerNr = GF.GerNr ) and  
+         ( GFPOS.GfNr = GF.GfNr ) and  
+         ( GFPOS.GerNr = VK.GerNr ) and  
+         ( GFPOS.Ztpkt = VK.Ztpkt ) and  
+         ( GFPOS.GfNr = VK.GfNr ) and  
+         ( GFPOS.GfPosNr = VK.GfPosNr ) and  
+         ( GER.PhNr = PH.PhNr ) and  
+         ( GER.GerNr = GF.GerNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr) and  
+         ( GFPOS.IstStorniert = 0) and  
+         ( GFPOS.GfPosTyp = 1) and
+         ( VK.ArtikNr = ARTIK.ArtikNr ) and
+         ( VK.ArtikNr = SDSYSARTIK.ArtikNr ) and
+         ( SDSYSARTIK.IstKartenArtik = 0) AND
+         ( SDSYSTXT.TxtCode = 'SONDERUMS' ) AND   
+         ( SDSYSTXT.Sprache = PARAM.Sprache) and
+         ( GF.GerNr = BZLGPOS.GerNr ) and  
+         ( GF.Ztpkt = BZLGPOS.Ztpkt ) and  
+         ( GF.GfNr = BZLGPOS.GfNr ) and  
+         ( BZLGPOS.GerNr = BARBZLG.GerNr ) and  
+         ( BZLGPOS.Ztpkt = BARBZLG.Ztpkt ) and  
+         ( BZLGPOS.GfNr = BARBZLG.GfNr ) and  
+         ( BZLGPOS.BzlgPosNr = BARBZLG.BzlgPosNr ) and  
+         ( BARBZLG.IstStorniert = 0 ) and  
+         ( BARBZLG.IstScheck = 0 ) and  
+         ( BARBZLG.Umsatz <> 0 ) 
+union
+  SELECT GF.Ztpkt as    Odeme_Zamani,GF.GerNr as Cihaz_No,GER.GerBez as Cihaz_Ad,GER.GerKBez as Cihaz_KisaAd,
+         GER.GerTyp     as Cihaz_Tur,PH.PhNr as Otopark_No,PH.PhBez    as Otopark_Ad,PH.PhKBez as Otopark_KisaAd,  
+         GF.GfNr as TransactionNo,GF.RechnungsNr as  FisNo,GF.PersonalNr     as      PersonelNo,PERSONAL.Nachname as    Operator_Isim,
+         PERSONAL.Vorname as Operator_Isim2, GFPOS.Umsatz as Gelir,GFPOS.UmsatzNetto as      Net_Gelir,
+         ARTIK.ArtikNr  as    Kart_Tanim_No, SDSYSTXT.Txt asKart_Tanim_Kategori,ARTIK.ArtikBez as    Kart_Tanim_Ad,
+         ARTIK.ArtikKbez as Kart_Tanim_KisaAd,VK.VonZtpkt as Baslangic_Tarihi,VK.BisZtpkt as Bitis_Tarihi,
+         VK.PersonalNrVk as Personel_SatisNo,VK.ZimmerNr as OdaNo,VK.FolioNr as      FolyoNo,VK.Name   as Satis_Isim,
+         VK.PreisProTag as GunlukGelir,VK.KartenNrVon as Kartin_Baslangic_Tarihi,VK.KartenNrBis   as    Kartin_Bitis_Tarihi,
+         GF.Name as Ad,GF.Strasse as Cadde,GF.Ort as Sehir,GF.SteuerNr as VergiNo,  datediff(dd, VK.VonZtpkt, VK.BisZtpkt) + 1  as GunSayisi,
+         'Nakit' as OdemeTuru
+    FROM GF WITH (NOLOCK),   
+         GFPOS WITH (NOLOCK),
+         VK WITH (NOLOCK), 
+         ARTIK WITH (NOLOCK),  
+         PH WITH (NOLOCK),   
+         GER WITH (NOLOCK),
+         PERSONAL WITH (NOLOCK),
+         SDSYSTXT WITH (NOLOCK),
+         KARTENARTIK WITH (NOLOCK),
+         PARAM WITH (NOLOCK),
+         SDSYSKART WITH (NOLOCK),
+     BZLGPOS WITH (NOLOCK),   
+         BARBZLG WITH (NOLOCK)
+    
+   WHERE ( GFPOS.Ztpkt = GF.Ztpkt ) and  
+         ( GFPOS.GerNr = GF.GerNr ) and  
+         ( GFPOS.GfNr = GF.GfNr ) and  
+         ( GFPOS.GerNr = VK.GerNr ) and  
+         ( GFPOS.Ztpkt = VK.Ztpkt ) and  
+         ( GFPOS.GfNr = VK.GfNr ) and  
+         ( GFPOS.GfPosNr = VK.GfPosNr ) and  
+         ( GER.PhNr = PH.PhNr ) and  
+         ( GER.GerNr = GF.GerNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr) and  
+         ( GFPOS.IstStorniert = 0) and  
+         ( GFPOS.GfPosTyp = 1) and
+         ( VK.ArtikNr = ARTIK.ArtikNr ) and
+         ( VK.ArtikNr = KARTENARTIK.ArtikNr ) and
+         ( KARTENARTIK.Syskart = SDSYSKART.Syskart) AND
+         ( SDSYSKART.BezTxtCode = SDSYSTXT.TxtCode) AND   
+         ( SDSYSTXT.Sprache = PARAM.Sprache) and
+        ( GF.GerNr = BZLGPOS.GerNr ) and  
+         ( GF.Ztpkt = BZLGPOS.Ztpkt ) and  
+         ( GF.GfNr = BZLGPOS.GfNr ) and  
+ 
+      ( BZLGPOS.GerNr = BARBZLG.GerNr ) and  
+         ( BZLGPOS.Ztpkt = BARBZLG.Ztpkt ) and  
+         ( BZLGPOS.GfNr = BARBZLG.GfNr ) and  
+         ( BZLGPOS.BzlgPosNr = BARBZLG.BzlgPosNr ) and  
+         ( BARBZLG.IstStorniert = 0 ) and  
+         ( BARBZLG.IstScheck = 0 ) and  
+         ( BARBZLG.Umsatz <> 0 ) 
+ union all
+--Abone Uzatimlari KK
+SELECT GF.Ztpkt as     Odeme_Zamani,GF.GerNr as Cihaz_No,GER.GerBez as Cihaz_Ad,GER.GerKBez as Cihaz_KisaAd,
+         GER.GerTyp     as Cihaz_Tur,PH.PhNr as Otopark_No,PH.PhBez    as Otopark_Ad,PH.PhKBez as Otopark_KisaAd,  
+         GF.GfNr as TransactionNo,GF.RechnungsNr as  FisNo,GF.PersonalNr     as      PersonelNo,PERSONAL.Nachname as    Operator_Isim,
+         PERSONAL.Vorname as Operator_Isim2, GFPOS.Umsatz as Gelir,GFPOS.UmsatzNetto as      Net_Gelir,
+         ARTIK.ArtikNr  as    Kart_Tanim_No, SDSYSTXT.Txt asKart_Tanim_Kategori,ARTIK.ArtikBez as    Kart_Tanim_Ad,
+         ARTIK.ArtikKbez as Kart_Tanim_KisaAd,VK.VonZtpkt as Baslangic_Tarihi,VK.BisZtpkt as Bitis_Tarihi,
+         VK.PersonalNrVk as Personel_SatisNo,VK.ZimmerNr as OdaNo,VK.FolioNr as      FolyoNo,VK.Name   as Satis_Isim,
+         VK.PreisProTag as GunlukGelir,VK.KartenNrVon as Kartin_Baslangic_Tarihi,VK.KartenNrBis   as    Kartin_Bitis_Tarihi,
+         GF.Name as Ad,GF.Strasse as Cadde,GF.Ort as Sehir,GF.SteuerNr as VergiNo,  datediff(dd, VK.VonZtpkt, VK.BisZtpkt) + 1  as GunSayisi,
+         'Kredi Karti' as OdemeTuru
+        
+    FROM GF WITH (NOLOCK),   
+         GFPOS WITH (NOLOCK),
+         VK WITH (NOLOCK), 
+         ARTIK WITH (NOLOCK), 
+         SDSYSARTIK WITH (NOLOCK), 
+         PH WITH (NOLOCK),   
+         GER WITH (NOLOCK),
+         PERSONAL WITH (NOLOCK),
+         SDSYSTXT WITH (NOLOCK),
+         PARAM WITH (NOLOCK),
+         SDSYSKART WITH (NOLOCK),
+  BZLGPOS WITH (NOLOCK),   
+         KKBZLG WITH (NOLOCK),   
+         KKGES WITH (NOLOCK)
+   WHERE ( GFPOS.Ztpkt = GF.Ztpkt ) and  
+         ( GFPOS.GerNr = GF.GerNr ) and  
+         ( GFPOS.GfNr = GF.GfNr ) and  
+         ( GFPOS.GerNr = VK.GerNr ) and  
+         ( GFPOS.Ztpkt = VK.Ztpkt ) and  
+         ( GFPOS.GfNr = VK.GfNr ) and  
+         ( GFPOS.GfPosNr = VK.GfPosNr ) and  
+         ( GER.PhNr = PH.PhNr ) and  
+         ( GER.GerNr = GF.GerNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr) and  
+         ( GFPOS.IstStorniert = 0) and  
+         ( GFPOS.GfPosTyp = 1) and
+         ( VK.ArtikNr = ARTIK.ArtikNr ) and
+         ( VK.ArtikNr = SDSYSARTIK.ArtikNr ) and
+         ( SDSYSARTIK.IstKartenArtik = 0) AND
+         ( SDSYSTXT.TxtCode = 'SONDERUMS' ) AND   
+         ( SDSYSTXT.Sprache = PARAM.Sprache) and
+            ( GF.GerNr = BZLGPOS.GerNr ) and  
+         ( GF.Ztpkt = BZLGPOS.Ztpkt ) and  
+         ( GF.GfNr = BZLGPOS.GfNr ) and  
+         ( BZLGPOS.GerNr = KKBZLG.GerNr ) and  
+         ( BZLGPOS.Ztpkt = KKBZLG.Ztpkt ) and  
+         ( BZLGPOS.GfNr = KKBZLG.GfNr ) and  
+         ( BZLGPOS.BzlgPosNr = KKBZLG.BzlgPosNr ) and  
+         ( KKBZLG.IstStorniert = 0 ) and  
+         ( KKBZLG.Umsatz <> 0 ) and
+         ( GER.GerNr = GF.GerNr ) and
+         ( GER.PhNr = PH.PhNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr ) and
+         ( KKBZLG.KkGes = KKGES.KkGes ) 
+union
+  SELECT GF.Ztpkt as    Odeme_Zamani,GF.GerNr as Cihaz_No,GER.GerBez as Cihaz_Ad,GER.GerKBez as Cihaz_KisaAd,
+         GER.GerTyp     as Cihaz_Tur,PH.PhNr as Otopark_No,PH.PhBez    as Otopark_Ad,PH.PhKBez as Otopark_KisaAd,  
+         GF.GfNr as TransactionNo,GF.RechnungsNr as  FisNo,GF.PersonalNr     as      PersonelNo,PERSONAL.Nachname as    Operator_Isim,
+         PERSONAL.Vorname as Operator_Isim2, GFPOS.Umsatz as Gelir,GFPOS.UmsatzNetto as      Net_Gelir,
+         ARTIK.ArtikNr  as    Kart_Tanim_No, SDSYSTXT.Txt as Kart_Tanim_Kategori,ARTIK.ArtikBez as    Kart_Tanim_Ad,
+         ARTIK.ArtikKbez as Kart_Tanim_KisaAd,VK.VonZtpkt as Baslangic_Tarihi,VK.BisZtpkt as Bitis_Tarihi,
+         VK.PersonalNrVk as Personel_SatisNo,VK.ZimmerNr as OdaNo,VK.FolioNr as      FolyoNo,VK.Name   as Satis_Isim,
+         VK.PreisProTag as GunlukGelir,VK.KartenNrVon as Kartin_Baslangic_Tarihi,VK.KartenNrBis   as    Kartin_Bitis_Tarihi,
+         GF.Name as Ad,GF.Strasse as Cadde,GF.Ort as Sehir,GF.SteuerNr as VergiNo,  datediff(dd, VK.VonZtpkt, VK.BisZtpkt) + 1  as GunSayisi,
+         'Kredi Karti' as OdemeTuru
+         
+    FROM GF WITH (NOLOCK),   
+         GFPOS WITH (NOLOCK),
+         VK WITH (NOLOCK), 
+         ARTIK WITH (NOLOCK),  
+         PH WITH (NOLOCK),   
+         GER WITH (NOLOCK),
+         PERSONAL WITH (NOLOCK),
+         SDSYSTXT WITH (NOLOCK),
+         KARTENARTIK WITH (NOLOCK),
+         PARAM WITH (NOLOCK),
+         SDSYSKART WITH (NOLOCK),
+  BZLGPOS WITH (NOLOCK),   
+         KKBZLG WITH (NOLOCK),   
+         KKGES WITH (NOLOCK)
+    
+   WHERE ( GFPOS.Ztpkt = GF.Ztpkt ) and  
+         ( GFPOS.GerNr = GF.GerNr ) and  
+         ( GFPOS.GfNr = GF.GfNr ) and  
+         ( GFPOS.GerNr = VK.GerNr ) and  
+         ( GFPOS.Ztpkt = VK.Ztpkt ) and  
+         ( GFPOS.GfNr = VK.GfNr ) and  
+         ( GFPOS.GfPosNr = VK.GfPosNr ) and  
+         ( GER.PhNr = PH.PhNr ) and  
+         ( GER.GerNr = GF.GerNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr) and  
+         ( GFPOS.IstStorniert = 0) and  
+         ( GFPOS.GfPosTyp = 1) and
+         ( VK.ArtikNr = ARTIK.ArtikNr ) and
+         ( VK.ArtikNr = KARTENARTIK.ArtikNr ) and
+         ( KARTENARTIK.Syskart = SDSYSKART.Syskart) AND
+         ( SDSYSKART.BezTxtCode = SDSYSTXT.TxtCode) AND   
+         ( SDSYSTXT.Sprache = PARAM.Sprache) and
+           ( GF.GerNr = BZLGPOS.GerNr ) and  
+         ( GF.Ztpkt = BZLGPOS.Ztpkt ) and  
+         ( GF.GfNr = BZLGPOS.GfNr ) and  
+         ( BZLGPOS.GerNr = KKBZLG.GerNr ) and  
+         ( BZLGPOS.Ztpkt = KKBZLG.Ztpkt ) and  
+         ( BZLGPOS.GfNr = KKBZLG.GfNr ) and  
+         ( BZLGPOS.BzlgPosNr = KKBZLG.BzlgPosNr ) and  
+         ( KKBZLG.IstStorniert = 0 ) and  
+         ( KKBZLG.Umsatz <> 0 ) and
+         ( GER.GerNr = GF.GerNr ) and
+         ( GER.PhNr = PH.PhNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr ) and
+         ( KKBZLG.KkGes = KKGES.KkGes ) 
+ 
+
+
+
+GO
+
+

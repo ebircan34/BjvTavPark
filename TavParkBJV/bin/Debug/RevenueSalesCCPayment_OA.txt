@@ -1,0 +1,217 @@
+USE [PARK_DB]
+GO
+
+/****** Object:  View [dbo].[RevenueSalesCCPayment_OA]    Script Date: 12/12/2023 12:16:44 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+
+create VIEW [dbo].[RevenueSalesCCPayment_OA]
+    ( Quantity,
+      Time,   
+      DeviceNo,
+      DeviceDesig,
+      DeviceAbbr,
+      DeviceType,
+      CarparkNo, 
+      CarparkDesig,
+      CarparkAbbr,  
+      TransactionNo, 
+      InvoiceNo,  
+      StaffCode,
+      OperatorSurname,
+      OperatorFirstName,   
+      Revenue,   
+      NetRevenue,
+      ArticleNo,  
+      ArticleCategory,
+      ArticleDesig,
+      ArticleAbbr,
+      ValidFrom,
+      Expires,
+      StaffCodeSale,
+      RoomNumber,
+      FolioNumber,
+      GuestName,
+      PricePerDay,
+      CardNoFrom,
+      CardNoTo,
+      Name,
+      Street,
+      City,
+      TaxCode,
+      NoOfDays) AS 
+
+  SELECT VK.Stk,
+         GF.Ztpkt,   
+         GF.GerNr,
+         GER.GerBez,
+         GER.GerKBez,
+         GER.GerTyp,
+         PH.PhNr,
+         PH.PhBez,
+         PH.PhKBez,   
+         GF.GfNr,
+         GF.RechnungsNr,   
+         GF.PersonalNr,
+         PERSONAL.Nachname,
+         PERSONAL.Vorname,   
+         GFPOS.Umsatz,
+         GFPOS.UmsatzNetto,   
+         ARTIK.ArtikNr,
+         SDSYSTXT.Txt, 
+         ARTIK.ArtikBez,
+         ARTIK.ArtikKbez,
+         VK.VonZtpkt,
+	 VK.BisZtpkt,
+         VK.PersonalNrVk,
+	 VK.ZimmerNr,
+         VK.FolioNr,
+         VK.Name,
+	 VK.PreisProTag,
+         VK.KartenNrVon,
+         VK.KartenNrBis,
+         GF.Name,	
+ 	 GF.Strasse,
+         GF.Ort,
+         GF.SteuerNr,
+         datediff(dd, VK.VonZtpkt, VK.BisZtpkt) + 1  
+    FROM GF WITH (NOLOCK),   
+         GFPOS WITH (NOLOCK),
+         VK WITH (NOLOCK), 
+         ARTIK WITH (NOLOCK), 
+         SDSYSARTIK WITH (NOLOCK), 
+         PH WITH (NOLOCK),   
+         GER WITH (NOLOCK),
+         PERSONAL WITH (NOLOCK),
+         SDSYSTXT WITH (NOLOCK),
+         PARAM WITH (NOLOCK),
+         SDSYSKART WITH (NOLOCK),
+  BZLGPOS WITH (NOLOCK),   
+         KKBZLG WITH (NOLOCK),   
+         KKGES WITH (NOLOCK)
+   WHERE ( GFPOS.Ztpkt = GF.Ztpkt ) and  
+         ( GFPOS.GerNr = GF.GerNr ) and  
+         ( GFPOS.GfNr = GF.GfNr ) and  
+         ( GFPOS.GerNr = VK.GerNr ) and  
+         ( GFPOS.Ztpkt = VK.Ztpkt ) and  
+         ( GFPOS.GfNr = VK.GfNr ) and  
+         ( GFPOS.GfPosNr = VK.GfPosNr ) and  
+         ( GER.PhNr = PH.PhNr ) and  
+         ( GER.GerNr = GF.GerNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr) and  
+         ( GFPOS.IstStorniert = 0) and  
+         ( GFPOS.GfPosTyp = 1) and
+         ( VK.ArtikNr = ARTIK.ArtikNr ) and
+         ( VK.ArtikNr = SDSYSARTIK.ArtikNr ) and
+         ( SDSYSARTIK.IstKartenArtik = 0) AND
+         ( SDSYSTXT.TxtCode = 'SONDERUMS' ) AND   
+         ( SDSYSTXT.Sprache = PARAM.Sprache) and
+
+	( GF.GerNr = BZLGPOS.GerNr ) and  
+         ( GF.Ztpkt = BZLGPOS.Ztpkt ) and  
+         ( GF.GfNr = BZLGPOS.GfNr ) and  
+         ( BZLGPOS.GerNr = KKBZLG.GerNr ) and  
+         ( BZLGPOS.Ztpkt = KKBZLG.Ztpkt ) and  
+         ( BZLGPOS.GfNr = KKBZLG.GfNr ) and  
+         ( BZLGPOS.BzlgPosNr = KKBZLG.BzlgPosNr ) and  
+         ( KKBZLG.IstStorniert = 0 ) and  
+         ( KKBZLG.Umsatz <> 0 ) and
+         ( GER.GerNr = GF.GerNr ) and
+         ( GER.PhNr = PH.PhNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr ) and
+         ( KKBZLG.KkGes = KKGES.KkGes ) 
+union
+  SELECT VK.Stk,
+         GF.Ztpkt,   
+         GF.GerNr,
+         GER.GerBez,
+         GER.GerKBez,
+         GER.GerTyp,
+         PH.PhNr,
+         PH.PhBez,
+         PH.PhKBez,   
+         GF.GfNr,
+         GF.RechnungsNr,   
+         GF.PersonalNr,
+         PERSONAL.Nachname,
+         PERSONAL.Vorname,   
+         GFPOS.Umsatz,
+         GFPOS.UmsatzNetto,   
+         ARTIK.ArtikNr,
+         SDSYSTXT.Txt, 
+         ARTIK.ArtikBez,
+         ARTIK.ArtikKbez,
+         VK.VonZtpkt,
+	 VK.BisZtpkt,
+         VK.PersonalNrVk,
+	 VK.ZimmerNr,
+         VK.FolioNr,
+         VK.Name,
+	 VK.PreisProTag,
+         VK.KartenNrVon,
+         VK.KartenNrBis,
+	 GF.Name,	
+ 	 GF.Strasse,
+         GF.Ort,
+         GF.SteuerNr,
+         datediff(dd, VK.VonZtpkt, VK.BisZtpkt) + 1
+    FROM GF WITH (NOLOCK),   
+         GFPOS WITH (NOLOCK),
+         VK WITH (NOLOCK), 
+         ARTIK WITH (NOLOCK),  
+         PH WITH (NOLOCK),   
+         GER WITH (NOLOCK),
+         PERSONAL WITH (NOLOCK),
+         SDSYSTXT WITH (NOLOCK),
+         KARTENARTIK WITH (NOLOCK),
+         PARAM WITH (NOLOCK),
+         SDSYSKART WITH (NOLOCK),
+  BZLGPOS WITH (NOLOCK),   
+         KKBZLG WITH (NOLOCK),   
+         KKGES WITH (NOLOCK)
+    
+   WHERE ( GFPOS.Ztpkt = GF.Ztpkt ) and  
+         ( GFPOS.GerNr = GF.GerNr ) and  
+         ( GFPOS.GfNr = GF.GfNr ) and  
+         ( GFPOS.GerNr = VK.GerNr ) and  
+         ( GFPOS.Ztpkt = VK.Ztpkt ) and  
+         ( GFPOS.GfNr = VK.GfNr ) and  
+         ( GFPOS.GfPosNr = VK.GfPosNr ) and  
+         ( GER.PhNr = PH.PhNr ) and  
+         ( GER.GerNr = GF.GerNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr) and  
+         ( GFPOS.IstStorniert = 0) and  
+         ( GFPOS.GfPosTyp = 1) and
+         ( VK.ArtikNr = ARTIK.ArtikNr ) and
+         ( VK.ArtikNr = KARTENARTIK.ArtikNr ) and
+         ( KARTENARTIK.Syskart = SDSYSKART.Syskart) AND
+         ( SDSYSKART.BezTxtCode = SDSYSTXT.TxtCode) AND   
+         ( SDSYSTXT.Sprache = PARAM.Sprache) and
+
+
+	( GF.GerNr = BZLGPOS.GerNr ) and  
+         ( GF.Ztpkt = BZLGPOS.Ztpkt ) and  
+         ( GF.GfNr = BZLGPOS.GfNr ) and  
+         ( BZLGPOS.GerNr = KKBZLG.GerNr ) and  
+         ( BZLGPOS.Ztpkt = KKBZLG.Ztpkt ) and  
+         ( BZLGPOS.GfNr = KKBZLG.GfNr ) and  
+         ( BZLGPOS.BzlgPosNr = KKBZLG.BzlgPosNr ) and  
+         ( KKBZLG.IstStorniert = 0 ) and  
+         ( KKBZLG.Umsatz <> 0 ) and
+         ( GER.GerNr = GF.GerNr ) and
+         ( GER.PhNr = PH.PhNr ) and
+         ( GF.PersonalNr = PERSONAL.PersonalNr ) and
+         ( KKBZLG.KkGes = KKGES.KkGes ) 
+
+
+
+GO
+
+

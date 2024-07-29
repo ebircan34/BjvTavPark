@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BjvParkDBXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CiftGecis">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="Plaka" Type="nvarchar" MaxLength="50" />
+    <Property Name="Lokasyon" Type="nvarchar" MaxLength="50" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" />
+    <Property Name="Firma" Type="nvarchar" MaxLength="150" />
+    <Property Name="Eylem" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aciklama" Type="nvarchar" MaxLength="250" />
+    <Property Name="Ucret" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OdemeYontemi" Type="nvarchar" MaxLength="50" />
+    <Property Name="YapilanIslem" Type="nvarchar" MaxLength="50" />
+    <Property Name="Personel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Saat" Type="nvarchar" MaxLength="50" />
+    <Property Name="ext1" Type="nchar" MaxLength="10" />
+    <Property Name="ext2" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Gelirler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MusteriId" Type="int" />
+    <Property Name="Tanim" Type="nvarchar" MaxLength="50" />
+    <Property Name="SatisGeliri" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KeyKartGeliri" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Sure" Type="smallint" />
+    <Property Name="AraToplam" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GenelToplam" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BaslangicTarihi" Type="date" />
+    <Property Name="BitisTarihi" Type="date" />
+    <Property Name="OdemeZamani" Type="date" />
+    <Property Name="OdemeYontemi" Type="nvarchar" MaxLength="30" />
+    <Property Name="OdemeYontemiNet" Type="nvarchar" MaxLength="30" />
+    <Property Name="Vardiya" Type="nvarchar" MaxLength="15" />
+    <Property Name="Personel" Type="nvarchar" MaxLength="50" />
+    <Property Name="InvoiceStatus" Type="char" MaxLength="15" />
+    <Property Name="PerID" Type="int" />
+    <Property Name="Otopark" Type="nvarchar" MaxLength="50" />
+    <Property Name="OdemeKasasi" Type="nvarchar" MaxLength="50" />
+    <Property Name="KartBiletNo" Type="nvarchar" MaxLength="10" />
+    <Property Name="FisNo" Type="nvarchar" MaxLength="10" />
+    <Property Name="FatNo" Type="nvarchar" MaxLength="10" />
+    <Property Name="VardiyaID" Type="int" />
+    <Property Name="Saat" Type="nchar" MaxLength="10" />
+    <Property Name="VeriTasiyici" Type="nchar" MaxLength="25" />
+    <Property Name="Status" Type="nchar" MaxLength="25" />
+    <Property Name="Ext5" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ext6" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ext7" Type="nchar" MaxLength="10" />
+    <Property Name="Ext8" Type="nchar" MaxLength="10" />
+    <Property Name="Adet" Type="int" />
+    <Property Name="Notlar" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="GercekMusteriler">
+    <Key>
+      <PropertyRef Name="MusteriId" />
+    </Key>
+    <Property Name="MusteriId" Type="int" Nullable="false" />
+    <Property Name="AdSoyad" Type="varchar" MaxLength="150" />
+    <Property Name="TcKimlikNo" Type="char" MaxLength="11" />
+    <Property Name="TelefonNo" Type="varchar" MaxLength="15" />
+    <Property Name="PlakaNo" Type="varchar" MaxLength="15" />
+    <Property Name="AdresText" Type="nvarchar" MaxLength="250" />
+    <Property Name="ilce" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sehir" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="KayitTarihi" Type="date" />
+    <Property Name="VergiDairesi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KeyKartHareket">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adet" Type="int" />
+    <Property Name="AdSoyadFirmaUnvani" Type="nvarchar" MaxLength="150" />
+    <Property Name="SatisTanimi" Type="nvarchar" MaxLength="150" />
+    <Property Name="Urun" Type="nvarchar" MaxLength="50" />
+    <Property Name="VerilisTarihi" Type="date" />
+    <Property Name="BitisTarihi" Type="date" />
+    <Property Name="Ucret" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OdemeYontemi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Personel" Type="nvarchar" MaxLength="50" />
+    <Property Name="KalanAdet" Type="int" />
+    <Property Name="Otopark" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ext3" Type="nchar" MaxLength="10" />
+    <Property Name="Ext4" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="KeyKartStok">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunId" Type="int" />
+    <Property Name="UrunAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="StokMiktar" Type="int" />
+  </EntityType>
+  <EntityType Name="KeykartUrun">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EklenenMiktar" Type="int" />
+    <Property Name="UrunAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunId" Type="int" />
+    <Property Name="Personel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tarih" Type="date" />
+  </EntityType>
+  <EntityType Name="ManBarAcma">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="Saat" Type="nchar" MaxLength="10" />
+    <Property Name="ManuelTipi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Plaka" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Kontakt" Type="nvarchar" MaxLength="50" />
+    <Property Name="BarkodNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="BelgeNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Personel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Otopark" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bariyer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aciklama" Type="nvarchar" MaxLength="150" />
+    <Property Name="Onay" Type="nvarchar" MaxLength="50" />
+    <Property Name="ext1" Type="nchar" MaxLength="10" />
+    <Property Name="ext2" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Musteriler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="MusteriNo" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="OzetGelir">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VID" Type="int" />
+    <Property Name="PerID" Type="int" />
+    <Property Name="Otopark" Type="nvarchar" MaxLength="50" />
+    <Property Name="VarBasTar" Type="date" />
+    <Property Name="VarBtTar" Type="date" />
+    <Property Name="VardiyaSaati" Type="nvarchar" MaxLength="50" />
+    <Property Name="Personel" Type="nvarchar" MaxLength="50" />
+    <Property Name="NakitFis" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NakitFisAdet" Type="int" />
+    <Property Name="NakitFatura" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NakitFaturaAdet" Type="int" />
+    <Property Name="KrediKartiFis" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KrediKartiFisAdet" Type="int" />
+    <Property Name="KrediKartiFatura" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KrediKartiFaturaAdet" Type="int" />
+    <Property Name="CariFatura" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CariFaturaAdet" Type="int" />
+    <Property Name="HavaleEftFatura" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="HavaleEftFaturaAdet" Type="int" />
+    <Property Name="Toplam" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tempDbx">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="Otopark" Type="nvarchar" MaxLength="50" />
+    <Property Name="Congress" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CongressAdet" Type="int" />
+    <Property Name="Abone" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AboneAdet" Type="int" />
+    <Property Name="VarId" Type="int" />
+    <Property Name="Personel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Perid" Type="int" />
+    <Property Name="KeyKart" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KeyKartAdet" Type="int" />
+    <Property Name="OzelSatis" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OzelSatisAdet" Type="int" />
+    <Property Name="ToplamGelir" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TuzelMusteriler">
+    <Key>
+      <PropertyRef Name="MusteriId" />
+    </Key>
+    <Property Name="MusteriId" Type="int" Nullable="false" />
+    <Property Name="Unvan" Type="varchar" MaxLength="300" />
+    <Property Name="VergiNo" Type="nvarchar" MaxLength="12" />
+    <Property Name="TelefonNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="PlakaNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdresText" Type="nvarchar" MaxLength="250" />
+    <Property Name="il" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sehir" Type="nvarchar" MaxLength="50" />
+    <Property Name="KayitTarihi" Type="date" />
+    <Property Name="ilce" Type="nvarchar" MaxLength="50" />
+    <Property Name="Yetkili" Type="nvarchar" MaxLength="50" />
+    <Property Name="VergiDairesi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vardiya">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Vardiya" Type="nvarchar" MaxLength="50" />
+    <Property Name="OpenTime" Type="datetime" />
+    <Property Name="CloseTime" Type="datetime" />
+    <Property Name="DeviceDesing" Type="nvarchar" MaxLength="50" />
+    <Property Name="VStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="PerID" Type="int" />
+  </EntityType>
+  <Association Name="FK_Bilancolar_Musteriler">
+    <End Role="Musteriler" Type="Self.Musteriler" Multiplicity="0..1" />
+    <End Role="Gelirler" Type="Self.Gelirler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteriler">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Gelirler">
+        <PropertyRef Name="MusteriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GercekMusteriler_Musteriler">
+    <End Role="Musteriler" Type="Self.Musteriler" Multiplicity="1" />
+    <End Role="GercekMusteriler" Type="Self.GercekMusteriler" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Musteriler">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GercekMusteriler">
+        <PropertyRef Name="MusteriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TuzelMusteriler_Musteriler">
+    <End Role="Musteriler" Type="Self.Musteriler" Multiplicity="1" />
+    <End Role="TuzelMusteriler" Type="Self.TuzelMusteriler" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Musteriler">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TuzelMusteriler">
+        <PropertyRef Name="MusteriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BjvParkDBXModelStoreContainer">
+    <EntitySet Name="CiftGecis" EntityType="Self.CiftGecis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gelirler" EntityType="Self.Gelirler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GercekMusteriler" EntityType="Self.GercekMusteriler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KeyKartHareket" EntityType="Self.KeyKartHareket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KeyKartStok" EntityType="Self.KeyKartStok" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KeykartUrun" EntityType="Self.KeykartUrun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ManBarAcma" EntityType="Self.ManBarAcma" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Musteriler" EntityType="Self.Musteriler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OzetGelir" EntityType="Self.OzetGelir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tempDbx" EntityType="Self.tempDbx" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TuzelMusteriler" EntityType="Self.TuzelMusteriler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vardiya" EntityType="Self.Vardiya" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Bilancolar_Musteriler" Association="Self.FK_Bilancolar_Musteriler">
+      <End Role="Musteriler" EntitySet="Musteriler" />
+      <End Role="Gelirler" EntitySet="Gelirler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GercekMusteriler_Musteriler" Association="Self.FK_GercekMusteriler_Musteriler">
+      <End Role="Musteriler" EntitySet="Musteriler" />
+      <End Role="GercekMusteriler" EntitySet="GercekMusteriler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TuzelMusteriler_Musteriler" Association="Self.FK_TuzelMusteriler_Musteriler">
+      <End Role="Musteriler" EntitySet="Musteriler" />
+      <End Role="TuzelMusteriler" EntitySet="TuzelMusteriler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

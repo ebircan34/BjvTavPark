@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BjvParkDBXModelStoreContainer" CdmEntityContainer="ParkDBXEntities">
+    <EntitySetMapping Name="Gelirler">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.Gelirler">
+        <MappingFragment StoreEntitySet="Gelirler">
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
+          <ScalarProperty Name="VardiyaID" ColumnName="VardiyaID" />
+          <ScalarProperty Name="Notlar" ColumnName="Notlar" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="VeriTasiyici" ColumnName="VeriTasiyici" />
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="Tanim" ColumnName="Tanim" />
+          <ScalarProperty Name="SatisGeliri" ColumnName="SatisGeliri" />
+          <ScalarProperty Name="KeyKartGeliri" ColumnName="KeyKartGeliri" />
+          <ScalarProperty Name="Sure" ColumnName="Sure" />
+          <ScalarProperty Name="AraToplam" ColumnName="AraToplam" />
+          <ScalarProperty Name="GenelToplam" ColumnName="GenelToplam" />
+          <ScalarProperty Name="BaslangicTarihi" ColumnName="BaslangicTarihi" />
+          <ScalarProperty Name="BitisTarihi" ColumnName="BitisTarihi" />
+          <ScalarProperty Name="OdemeZamani" ColumnName="OdemeZamani" />
+          <ScalarProperty Name="OdemeYontemi" ColumnName="OdemeYontemi" />
+          <ScalarProperty Name="OdemeYontemiNet" ColumnName="OdemeYontemiNet" />
+          <ScalarProperty Name="Vardiya" ColumnName="Vardiya" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="InvoiceStatus" ColumnName="InvoiceStatus" />
+          <ScalarProperty Name="PerID" ColumnName="PerID" />
+          <ScalarProperty Name="Otopark" ColumnName="Otopark" />
+          <ScalarProperty Name="OdemeKasasi" ColumnName="OdemeKasasi" />
+          <ScalarProperty Name="KartBiletNo" ColumnName="KartBiletNo" />
+          <ScalarProperty Name="FisNo" ColumnName="FisNo" />
+          <ScalarProperty Name="FatNo" ColumnName="FatNo" />
+          <ScalarProperty Name="Ext5" ColumnName="Ext5" />
+          <ScalarProperty Name="Ext6" ColumnName="Ext6" />
+          <ScalarProperty Name="Ext7" ColumnName="Ext7" />
+          <ScalarProperty Name="Ext8" ColumnName="Ext8" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GercekMusteriler">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.GercekMusteriler">
+        <MappingFragment StoreEntitySet="GercekMusteriler">
+          <ScalarProperty Name="VergiDairesi" ColumnName="VergiDairesi" />
+          <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="TcKimlikNo" ColumnName="TcKimlikNo" />
+          <ScalarProperty Name="TelefonNo" ColumnName="TelefonNo" />
+          <ScalarProperty Name="PlakaNo" ColumnName="PlakaNo" />
+          <ScalarProperty Name="AdresText" ColumnName="AdresText" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="Sehir" ColumnName="Sehir" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musteriler">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.Musteriler">
+        <MappingFragment StoreEntitySet="Musteriler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MusteriNo" ColumnName="MusteriNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TuzelMusteriler">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.TuzelMusteriler">
+        <MappingFragment StoreEntitySet="TuzelMusteriler">
+          <ScalarProperty Name="VergiDairesi" ColumnName="VergiDairesi" />
+          <ScalarProperty Name="Yetkili" ColumnName="Yetkili" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+          <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="VergiNo" ColumnName="VergiNo" />
+          <ScalarProperty Name="TelefonNo" ColumnName="TelefonNo" />
+          <ScalarProperty Name="PlakaNo" ColumnName="PlakaNo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="AdresText" ColumnName="AdresText" />
+          <ScalarProperty Name="il" ColumnName="il" />
+          <ScalarProperty Name="Sehir" ColumnName="Sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CiftGecis">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.CiftGecis">
+        <MappingFragment StoreEntitySet="CiftGecis">
+          <ScalarProperty Name="ext2" ColumnName="ext2" />
+          <ScalarProperty Name="ext1" ColumnName="ext1" />
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="YapilanIslem" ColumnName="YapilanIslem" />
+          <ScalarProperty Name="OdemeYontemi" ColumnName="OdemeYontemi" />
+          <ScalarProperty Name="Ucret" ColumnName="Ucret" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Eylem" ColumnName="Eylem" />
+          <ScalarProperty Name="Firma" ColumnName="Firma" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Lokasyon" ColumnName="Lokasyon" />
+          <ScalarProperty Name="Plaka" ColumnName="Plaka" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManBarAcma">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.ManBarAcma">
+        <MappingFragment StoreEntitySet="ManBarAcma">
+          <ScalarProperty Name="Onay" ColumnName="Onay" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="ext2" ColumnName="ext2" />
+          <ScalarProperty Name="ext1" ColumnName="ext1" />
+          <ScalarProperty Name="Bariyer" ColumnName="Bariyer" />
+          <ScalarProperty Name="Otopark" ColumnName="Otopark" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="BelgeNo" ColumnName="BelgeNo" />
+          <ScalarProperty Name="BarkodNo" ColumnName="BarkodNo" />
+          <ScalarProperty Name="Kontakt" ColumnName="Kontakt" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Plaka" ColumnName="Plaka" />
+          <ScalarProperty Name="ManuelTipi" ColumnName="ManuelTipi" />
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vardiya">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.Vardiya">
+        <MappingFragment StoreEntitySet="Vardiya">
+          <ScalarProperty Name="PerID" ColumnName="PerID" />
+          <ScalarProperty Name="VStatus" ColumnName="VStatus" />
+          <ScalarProperty Name="DeviceDesing" ColumnName="DeviceDesing" />
+          <ScalarProperty Name="CloseTime" ColumnName="CloseTime" />
+          <ScalarProperty Name="OpenTime" ColumnName="OpenTime" />
+          <ScalarProperty Name="Vardiya1" ColumnName="Vardiya" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tempDbx">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.tempDbx">
+        <MappingFragment StoreEntitySet="tempDbx">
+          <ScalarProperty Name="OzelSatisAdet" ColumnName="OzelSatisAdet" />
+          <ScalarProperty Name="OzelSatis" ColumnName="OzelSatis" />
+          <ScalarProperty Name="KeyKartAdet" ColumnName="KeyKartAdet" />
+          <ScalarProperty Name="KeyKart" ColumnName="KeyKart" />
+          <ScalarProperty Name="Perid" ColumnName="Perid" />
+          <ScalarProperty Name="AboneAdet" ColumnName="AboneAdet" />
+          <ScalarProperty Name="Abone" ColumnName="Abone" />
+          <ScalarProperty Name="CongressAdet" ColumnName="CongressAdet" />
+          <ScalarProperty Name="Congress" ColumnName="Congress" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="VarId" ColumnName="VarId" />
+          <ScalarProperty Name="ToplamGelir" ColumnName="ToplamGelir" />
+          <ScalarProperty Name="Otopark" ColumnName="Otopark" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OzetGelir">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.OzetGelir">
+        <MappingFragment StoreEntitySet="OzetGelir">
+          <ScalarProperty Name="HavaleEftFaturaAdet" ColumnName="HavaleEftFaturaAdet" />
+          <ScalarProperty Name="HavaleEftFatura" ColumnName="HavaleEftFatura" />
+          <ScalarProperty Name="Toplam" ColumnName="Toplam" />
+          <ScalarProperty Name="CariFaturaAdet" ColumnName="CariFaturaAdet" />
+          <ScalarProperty Name="CariFatura" ColumnName="CariFatura" />
+          <ScalarProperty Name="KrediKartiFaturaAdet" ColumnName="KrediKartiFaturaAdet" />
+          <ScalarProperty Name="KrediKartiFatura" ColumnName="KrediKartiFatura" />
+          <ScalarProperty Name="KrediKartiFisAdet" ColumnName="KrediKartiFisAdet" />
+          <ScalarProperty Name="KrediKartiFis" ColumnName="KrediKartiFis" />
+          <ScalarProperty Name="NakitFaturaAdet" ColumnName="NakitFaturaAdet" />
+          <ScalarProperty Name="NakitFatura" ColumnName="NakitFatura" />
+          <ScalarProperty Name="NakitFisAdet" ColumnName="NakitFisAdet" />
+          <ScalarProperty Name="NakitFis" ColumnName="NakitFis" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="VardiyaSaati" ColumnName="VardiyaSaati" />
+          <ScalarProperty Name="VarBtTar" ColumnName="VarBtTar" />
+          <ScalarProperty Name="VarBasTar" ColumnName="VarBasTar" />
+          <ScalarProperty Name="Otopark" ColumnName="Otopark" />
+          <ScalarProperty Name="PerID" ColumnName="PerID" />
+          <ScalarProperty Name="VID" ColumnName="VID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeyKartHareket">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.KeyKartHareket">
+        <MappingFragment StoreEntitySet="KeyKartHareket">
+          <ScalarProperty Name="Otopark" ColumnName="Otopark" />
+          <ScalarProperty Name="Ext4" ColumnName="Ext4" />
+          <ScalarProperty Name="Ext3" ColumnName="Ext3" />
+          <ScalarProperty Name="KalanAdet" ColumnName="KalanAdet" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="OdemeYontemi" ColumnName="OdemeYontemi" />
+          <ScalarProperty Name="Ucret" ColumnName="Ucret" />
+          <ScalarProperty Name="BitisTarihi" ColumnName="BitisTarihi" />
+          <ScalarProperty Name="VerilisTarihi" ColumnName="VerilisTarihi" />
+          <ScalarProperty Name="Urun" ColumnName="Urun" />
+          <ScalarProperty Name="SatisTanimi" ColumnName="SatisTanimi" />
+          <ScalarProperty Name="AdSoyadFirmaUnvani" ColumnName="AdSoyadFirmaUnvani" />
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeyKartStok">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.KeyKartStok">
+        <MappingFragment StoreEntitySet="KeyKartStok">
+          <ScalarProperty Name="StokMiktar" ColumnName="StokMiktar" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeykartUrun">
+      <EntityTypeMapping TypeName="BjvParkDBXModel.KeykartUrun">
+        <MappingFragment StoreEntitySet="KeykartUrun">
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Personel" ColumnName="Personel" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="EklenenMiktar" ColumnName="EklenenMiktar" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

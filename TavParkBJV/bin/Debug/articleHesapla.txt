@@ -1,0 +1,180 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace ArticleHesapla
+{
+    public partial class Form1 : Form
+    {
+        string connetionString;
+        SqlConnection baglanti;
+        public int _period;
+        public int abnAdet;
+        public double araToplam = 0;
+        public double keyKartUcreti = 0;public double genelToplam=0;
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void DB_Connect()
+        {
+            StreamReader oku = new StreamReader(@"data\Connection_DB.dat");
+            connetionString = oku.ReadLine();
+            baglanti = new SqlConnection(connetionString);
+            baglanti.Open();
+            MessageBox.Show("Connection Open  !");
+            baglanti.Close();
+        }
+        private void btnHesapla_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void keykartUcretiniOgren()
+        {
+            string[] lineOfContents = File.ReadAllLines(@"data\KeyKart.dat");
+            foreach (var line in lineOfContents)
+            {
+                string[] tokens = line.Split(',');
+                // get the 2nd element (the 1st item is always item 0)
+                //comboBox1.Items.Add(tokens[1]);
+                keyKartUcreti=Convert.ToDouble(tokens[0]);
+                
+            }
+        }
+
+        private void articleLoad()
+        {
+
+            cmbArticle.Items.Clear();
+            baglanti.Open();
+            SqlCommand cmd = new SqlCommand("Select * from Article", baglanti);
+            SqlDataReader dr_validasyon = cmd.ExecuteReader();
+
+            while (dr_validasyon.Read())
+            {
+                cmbArticle.Items.Add(dr_validasyon["Article"]);
+
+            }
+            baglanti.Close();
+            dr_validasyon.Close();
+        }
+
+        private void abonelikHesapla()
+        {
+            araToplam = 0;
+            txtBirimFiyati.Text = "0";
+            
+            baglanti.Open();
+            SqlCommand cmd = new SqlCommand("Select * from Article", baglanti);
+            SqlDataReader drarticle = cmd.ExecuteReader();
+
+            while (drarticle.Read())
+            {
+                if (cmbArticle.Text == drarticle[1].ToString())
+                {
+                    dateTimePicker1.Value = DateTime.Today;
+                    txtBirimFiyati.Text = drarticle[3].ToString();
+                    //timerr_Count = Convert.ToInt32(drarticle[4]);
+                    _period= Convert.ToInt32(drarticle[2]);
+                    DateTime date = DateTime.Now;
+                    _period=int.Parse(cmbPeriod.Text)*_period;
+                    date = date.AddDays(_period); // Adds days to the date
+                    dateTimePicker2.Value = Convert.ToDateTime(date);
+                    
+                }
+            }
+            //textBoxOdemeTutari.Text = Convert.ToString(textBoxRevenue.Text);
+
+            //textBoxAraToplam.Text = Convert.ToString(0);
+            baglanti.Close();
+            araToplam=double.Parse(cmbPeriod.Text) * double.Parse(txtBirimFiyati.Text);
+            txtAraToplam.Text = araToplam.ToString("N");
+
+
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtAraToplam.Text = "0";
+            txtBirimFiyati.Text = "0";
+            txtGenelToplam.Text = "0";
+            txtKeykart.Text = "0";
+            DB_Connect();
+            cmbPeriod.SelectedIndex = 0;
+            articleLoad();
+            keykartUcretiniOgren();
+            
+        }
+
+        private void cmbArticle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            abonelikHesapla();
+            genelToplam = 0;
+            genelToplam =araToplam+double.Parse(txtKeykart.Text);
+            txtGenelToplam.Text = genelToplam.ToString("N");
+
+        }
+
+        private void cmbPeriod_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            abonelikHesapla();
+            genelToplam = 0;
+            genelToplam = araToplam + double.Parse(txtKeykart.Text);
+            txtGenelToplam.Text = genelToplam.ToString("N");
+        }
+
+        private void radioButtonKeyKart_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonKeyKart.Checked == true)
+            {
+                txtKeykart.Text = Convert.ToString(keyKartUcreti);
+                //araToplam = araToplam + keyKartUcreti;
+                abonelikHesapla();
+                genelToplam = 0;
+                genelToplam = araToplam + double.Parse(txtKeykart.Text);
+                txtGenelToplam.Text = genelToplam.ToString("N");
+
+
+
+            }
+        }
+
+        private void radioButtonBarkod_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonBarkod.Checked == true) 
+            {
+
+                txtKeykart.Text = "0";
+                abonelikHesapla();
+                genelToplam = 0;
+                genelToplam = araToplam + double.Parse(txtKeykart.Text);
+                txtGenelToplam.Text = genelToplam.ToString("N");
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonYenileme.Checked==true) 
+            {
+                txtKeykart.Text = "0";
+                abonelikHesapla();
+                genelToplam = 0;
+                genelToplam = araToplam + double.Parse(txtKeykart.Text);
+                txtGenelToplam.Text = genelToplam.ToString("N");
+
+            }
+        }
+    }
+}
