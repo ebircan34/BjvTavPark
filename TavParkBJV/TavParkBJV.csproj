@@ -93,6 +93,12 @@
     <Compile Include="CiftGecis.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="CokluFirmaAbonelik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CokluFirmaAbonelik.Designer.cs">
+      <DependentUpon>CokluFirmaAbonelik.cs</DependentUpon>
+    </Compile>
     <Compile Include="FCiftGecis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BireyselSatis.resx">
       <DependentUpon>BireyselSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CokluFirmaAbonelik.resx">
+      <DependentUpon>CokluFirmaAbonelik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
