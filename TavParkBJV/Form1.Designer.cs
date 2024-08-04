@@ -53,6 +53,7 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btnOzelSatisRaporlari = new DevExpress.XtraBars.BarButtonItem();
             this.btnKeyKart = new DevExpress.XtraBars.BarButtonItem();
+            this.btnKeyKartListeTakip = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
@@ -62,7 +63,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnKeyKartListeTakip = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -225,7 +225,7 @@
             // 
             // btnSkidata
             // 
-            this.btnSkidata.Caption = "SKIDATA";
+            this.btnSkidata.Caption = "ÇOKLU ABONELİK";
             this.btnSkidata.Id = 16;
             this.btnSkidata.ImageOptions.LargeImage = global::TavParkBJV.Properties.Resources.letter_s;
             this.btnSkidata.Name = "btnSkidata";
@@ -278,6 +278,15 @@
             this.btnKeyKart.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnKeyKart.ImageOptions.SvgImage")));
             this.btnKeyKart.Name = "btnKeyKart";
             this.btnKeyKart.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKeyKart_ItemClick);
+            // 
+            // btnKeyKartListeTakip
+            // 
+            this.btnKeyKartListeTakip.Caption = "KEY KART RAPOR";
+            this.btnKeyKartListeTakip.Id = 23;
+            this.btnKeyKartListeTakip.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKeyKartListeTakip.ImageOptions.Image")));
+            this.btnKeyKartListeTakip.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKeyKartListeTakip.ImageOptions.LargeImage")));
+            this.btnKeyKartListeTakip.Name = "btnKeyKartListeTakip";
+            this.btnKeyKartListeTakip.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKeyKartListeTakip_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -374,15 +383,6 @@
             this.label6.Size = new System.Drawing.Size(78, 18);
             this.label6.TabIndex = 7;
             this.label6.Text = "Vardiya ID:";
-            // 
-            // btnKeyKartListeTakip
-            // 
-            this.btnKeyKartListeTakip.Caption = "KEY KART RAPOR";
-            this.btnKeyKartListeTakip.Id = 23;
-            this.btnKeyKartListeTakip.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.btnKeyKartListeTakip.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.btnKeyKartListeTakip.Name = "btnKeyKartListeTakip";
-            this.btnKeyKartListeTakip.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKeyKartListeTakip_ItemClick);
             // 
             // Main
             // 

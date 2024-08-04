@@ -59,6 +59,7 @@ namespace TavParkBJV
         tempDbx tempdbx = new tempDbx();
         KeyKartXtraForm frmkeykartform = new KeyKartXtraForm();
         KeyKartTakip frmkeykarttakip = new KeyKartTakip();
+        CokluFirmaAbonelik frmCoklufirmaAbonelik = new CokluFirmaAbonelik();
         public Main()
         {
             InitializeComponent();
@@ -66,20 +67,26 @@ namespace TavParkBJV
 
         private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
-            {
-                StreamReader oku = new StreamReader(@"data\SC_DB.dat");
-                connetionString = oku.ReadLine();
-                SDbaglanti = new SqlConnection(connetionString);
-                SDbaglanti.Open();
-                MessageBox.Show("SKIDATA Bağlantısı OK  !");
-                SDbaglanti.Close();
-            }
-            catch  
-            { 
-            MessageBox.Show("SKIDATA Bağlantı Hatası","UYARI",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            }
-            
+            //try
+            //{
+            //    StreamReader oku = new StreamReader(@"data\SC_DB.dat");
+            //    connetionString = oku.ReadLine();
+            //    SDbaglanti = new SqlConnection(connetionString);
+            //    SDbaglanti.Open();
+            //    MessageBox.Show("SKIDATA Bağlantısı OK  !");
+            //    SDbaglanti.Close();
+            //}
+            //catch  
+            //{ 
+            //MessageBox.Show("SKIDATA Bağlantı Hatası","UYARI",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            //}
+
+            this.Hide();
+            frmCoklufirmaAbonelik = new CokluFirmaAbonelik();
+            frmCoklufirmaAbonelik.ShowDialog();
+            frmCoklufirmaAbonelik = null;
+            this.Show();
+
         }
 
         private void barButtonItem17_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

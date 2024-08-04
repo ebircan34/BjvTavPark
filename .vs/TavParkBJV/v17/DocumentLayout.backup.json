@@ -1,45 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\tavparkbjv\\tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\bjvtavpark\\tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\bjvtavpark\\tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\bjvtavpark\\tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\bjvtavpark\\tavparkbjv\\coklufirmaabonelik.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\tavparkbjv\\tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\tavparkbjv\\vardiyaraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\vardiyaraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\tavparkbjv\\vardiyaraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\vardiyaraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\tavparkbjv\\bireyselsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\bireyselsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\tavparkbjv\\ozelsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\ozelsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\tavparkbjv\\tavparkbjv\\aboneraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\aboneraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\tavparkbjv\\tavparkbjv\\aboneraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\aboneraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\tavparkbjv\\tavparkbjv\\fmanuelacma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\fmanuelacma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\fmanuelacma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\tavparkbjv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\ozelsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\ozelsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\aboneraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\aboneraporu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,63 +74,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FManuelAcma.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\FManuelAcma.cs",
-              "RelativeDocumentMoniker": "TavParkBJV\\FManuelAcma.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\FManuelAcma.cs",
-              "RelativeToolTip": "TavParkBJV\\FManuelAcma.cs",
-              "ViewState": "AgIAAMUBAAAAAAAAAIA8wJ4BAAAMAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CokluFirmaAbonelik.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
+              "RelativeDocumentMoniker": "TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
+              "RelativeToolTip": "TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAewIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T08:26:16.641Z",
+              "WhenOpened": "2024-08-04T19:09:29.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CokluFirmaAbonelik.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.cs",
+              "RelativeDocumentMoniker": "TavParkBJV\\CokluFirmaAbonelik.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.cs",
+              "RelativeToolTip": "TavParkBJV\\CokluFirmaAbonelik.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAASwCgBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T13:44:48.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CokluFirmaAbonelik.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.cs",
+              "RelativeDocumentMoniker": "TavParkBJV\\CokluFirmaAbonelik.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.cs [Tasar\u0131m]",
+              "RelativeToolTip": "TavParkBJV\\CokluFirmaAbonelik.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:57:02.44Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KurumsalSatis.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\KurumsalSatis.cs",
+              "RelativeDocumentMoniker": "TavParkBJV\\KurumsalSatis.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\KurumsalSatis.cs",
+              "RelativeToolTip": "TavParkBJV\\KurumsalSatis.cs",
+              "ViewState": "AgIAAN4BAAAAAAAAAAAcwAwCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T13:50:22.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KurumsalSatis.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\KurumsalSatis.cs",
+              "RelativeDocumentMoniker": "TavParkBJV\\KurumsalSatis.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\KurumsalSatis.cs [Tasar\u0131m]",
+              "RelativeToolTip": "TavParkBJV\\KurumsalSatis.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:53:35.935Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FManuelAcma.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\FManuelAcma.cs",
+              "RelativeDocumentMoniker": "TavParkBJV\\FManuelAcma.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\FManuelAcma.cs",
+              "RelativeToolTip": "TavParkBJV\\FManuelAcma.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T08:26:16.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\Form1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs",
               "RelativeToolTip": "TavParkBJV\\Form1.cs",
-              "ViewState": "AgIAACYBAAAAAAAAAAAAACYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAIAwwFYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-27T20:19:51.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "AboneRaporu.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\AboneRaporu.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\AboneRaporu.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\AboneRaporu.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\AboneRaporu.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\AboneRaporu.cs",
               "RelativeToolTip": "TavParkBJV\\AboneRaporu.cs",
-              "ViewState": "AgIAAA8CAAAAAAAAAAAAADQCAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T20:10:47.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T20:10:47.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VardiyaRaporu.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\VardiyaRaporu.cs",
-              "RelativeDocumentMoniker": "TavParkBJV\\VardiyaRaporu.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\VardiyaRaporu.cs",
-              "RelativeToolTip": "TavParkBJV\\VardiyaRaporu.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAAAmwCgBAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T10:43:29.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\Form1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\Form1.cs [Tasar\u0131m]",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs [Tasar\u0131m]",
               "RelativeToolTip": "TavParkBJV\\Form1.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-28T08:28:25.838Z",
@@ -134,66 +185,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AboneRaporu.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\AboneRaporu.cs",
-              "RelativeDocumentMoniker": "TavParkBJV\\AboneRaporu.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\AboneRaporu.cs [Tasar\u0131m]",
-              "RelativeToolTip": "TavParkBJV\\AboneRaporu.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T20:10:44.657Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VardiyaRaporu.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\VardiyaRaporu.cs",
-              "RelativeDocumentMoniker": "TavParkBJV\\VardiyaRaporu.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\VardiyaRaporu.cs [Tasar\u0131m]",
-              "RelativeToolTip": "TavParkBJV\\VardiyaRaporu.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T10:43:26.358Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BireyselSatis.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\BireyselSatis.cs",
-              "RelativeDocumentMoniker": "TavParkBJV\\BireyselSatis.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\BireyselSatis.cs",
-              "RelativeToolTip": "TavParkBJV\\BireyselSatis.cs",
-              "ViewState": "AgIAAJ0BAAAAAAAAAAAqwKYBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T09:49:52.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "OzelSatis.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\OzelSatis.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\OzelSatis.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\OzelSatis.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\OzelSatis.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\OzelSatis.cs",
               "RelativeToolTip": "TavParkBJV\\OzelSatis.cs",
               "ViewState": "AgIAANMCAAAAAAAAAAAawG4CAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T09:50:22.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T09:50:22.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Program.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\TavParkBJV\\TavParkBJV\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Program.cs",
               "RelativeToolTip": "TavParkBJV\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:59:06.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T18:59:06.273Z"
             }
           ]
         }

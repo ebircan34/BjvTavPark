@@ -108,6 +108,7 @@
             this.dateTimePickerBasTar = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnONAY = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -116,7 +117,6 @@
             this.btnListele = new DevExpress.XtraEditors.SimpleButton();
             this.btnCongressData = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdate)).BeginInit();
@@ -348,7 +348,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(55, 186);
+            this.label26.Location = new System.Drawing.Point(55, 187);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(42, 15);
             this.label26.TabIndex = 32;
@@ -1018,6 +1018,15 @@
             this.panel6.Size = new System.Drawing.Size(1119, 89);
             this.panel6.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(428, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 72);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Kayıt Sil";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // btnONAY
             // 
             this.btnONAY.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1098,15 +1107,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 21);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.Value = new System.DateTime(2024, 5, 19, 0, 0, 0, 0);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(428, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 72);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Kayıt Sil";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // KurumsalSatis
             // 
