@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\carpark\\source\\repos\\bjvtavpark\\tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\carpark\\source\\repos\\bjvtavpark\\tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\carpark\\source\\repos\\bjvtavpark\\tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\tavparkbjv\\fmanuelacma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\fmanuelacma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\carpark\\source\\repos\\bjvtavpark\\tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CokluFirmaAbonelik.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\CokluFirmaAbonelik.cs",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "KurumsalSatis.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\TavParkBJV\\KurumsalSatis.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\KurumsalSatis.cs",
@@ -90,8 +90,7 @@
               "RelativeToolTip": "TavParkBJV\\FManuelAcma.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T08:26:16.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-28T08:26:16.641Z"
             },
             {
               "$type": "Document",
@@ -103,8 +102,7 @@
               "RelativeToolTip": "TavParkBJV\\Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T20:19:51.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T20:19:51.899Z"
             },
             {
               "$type": "Document",
@@ -115,8 +113,7 @@
               "ToolTip": "C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\TavParkBJV\\AboneRaporu.cs",
               "RelativeToolTip": "TavParkBJV\\AboneRaporu.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T20:10:47.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T20:10:47.402Z"
             },
             {
               "$type": "Document",
@@ -127,8 +124,7 @@
               "ToolTip": "C:\\Users\\Carpark\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs [Design]",
               "RelativeToolTip": "TavParkBJV\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T08:28:25.838Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-28T08:28:25.838Z"
             },
             {
               "$type": "Document",
