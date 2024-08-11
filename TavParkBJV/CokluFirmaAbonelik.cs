@@ -30,6 +30,11 @@ namespace TavParkBJV
         bool shiftLock=false;
         decimal araToplam = 0;
         int _period = 0;
+        int kkadeti = 0;
+        decimal gToplam = 0;
+        decimal aToplam = 0;
+        int abonelikAdeti = 0;
+        decimal keykartGeliri = 0;
 
         private void CokluFirmaAbonelik_Load(object sender, EventArgs e)
         {
@@ -289,17 +294,57 @@ namespace TavParkBJV
 
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-           
+            araToplam = 0;
+            genelToplam= 0;
+            decimal abonelikGeliri = 0;
+            int keykart = 0;
+            keykartGeliri = 0;
+            int aboneAdet = 0;
             
+            if (radiobuttonKeyKart.Checked==true)
+            {
+                            
+                keykart = int.Parse(cmbKeyKartAdeti.Text);
+                keykartGeliri = (Convert.ToDecimal(keykart) * keyKartUcreti);
+            }
             
+            if (radioButtonAbnYenile.Checked==true)
+            {
+                keykartGeliri = 0;
+
+            }
             
-           // araToplam = decimal.Parse(cmbAbonelikSuresi.Text) * decimal.Parse(txtTanimUcreti.Text);
-           // txtAraToplam.Text = araToplam.ToString("N");
+            abonelikGeliri=decimal.Parse(txtTanimUcreti.Text);
+            aboneAdet = int.Parse(cmbAbonelikAdeti.Text) * int.Parse(cmbAbonelikSuresi.Text);
+            araToplam = aboneAdet * abonelikGeliri;
+            genelToplam=araToplam+keykartGeliri;
+            
+            txtOdemeTutari.Text=genelToplam.ToString("N");
+            txtAboneSurei.Text = Convert.ToString((decimal.Parse(cmbAbonelikAdeti.Text) * decimal.Parse(cmbAbonelikSuresi.Text)));
+            txtAraToplam.Text=araToplam.ToString("N");
+            txtKeyKart.Text=keykartGeliri.ToString("N");
+
+
             az5 = 1;
+            
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+            if (az5==1)
+            {
+              gelirler.Id=int.Parse(txtID.Text);
+              
+            }
+            if (az5==0)
+            {
+                MessageBox.Show("Hesapla Butonuna Tıklayınız");
+            }
+            
+            
+            
+            
+            
             az5 = 0;// en son satır.
         }
 
@@ -362,11 +407,13 @@ namespace TavParkBJV
         private void radiobuttonKeyKart_CheckedChanged(object sender, EventArgs e)
         {
             az5 = 0;
+            cmbKeyKartAdeti.SelectedIndex = 1;
         }
 
         private void radioButtonAbnYenile_CheckedChanged(object sender, EventArgs e)
         {
             az5 = 0;
+            cmbKeyKartAdeti.SelectedIndex = 0;
         }
 
         public CokluFirmaAbonelik()

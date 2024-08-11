@@ -7,20 +7,16 @@
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\bjvtavpark\\tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\bjvtavpark\\tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\kurumsalsatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|c:\\users\\administrator\\source\\repos\\bjvtavpark\\tavparkbjv\\coklufirmaabonelik.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|solutionrelative:tavparkbjv\\coklufirmaabonelik.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2C12D90-50D5-45F1-84C9-B0B02B1903BC}|TavParkBJV\\TavParkBJV.csproj|C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\tavparkbjv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,26 +70,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CokluFirmaAbonelik.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
-              "RelativeDocumentMoniker": "TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
-              "RelativeToolTip": "TavParkBJV\\CokluFirmaAbonelik.Designer.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAewIUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T19:09:29.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CokluFirmaAbonelik.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\CokluFirmaAbonelik.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\CokluFirmaAbonelik.cs",
               "RelativeToolTip": "TavParkBJV\\CokluFirmaAbonelik.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAASwCgBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADUBAAAAAAAAAAAMwE8BAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-04T13:44:48.035Z",
               "EditorCaption": ""
@@ -118,7 +101,7 @@
               "RelativeDocumentMoniker": "TavParkBJV\\KurumsalSatis.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\KurumsalSatis.cs",
               "RelativeToolTip": "TavParkBJV\\KurumsalSatis.cs",
-              "ViewState": "AgIAAN4BAAAAAAAAAAAcwAwCAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAMwGIBAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-04T13:50:22.443Z",
               "EditorCaption": ""
@@ -137,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "FManuelAcma.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\FManuelAcma.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\FManuelAcma.cs",
@@ -149,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\Form1.cs",
@@ -157,12 +140,11 @@
               "RelativeToolTip": "TavParkBJV\\Form1.cs",
               "ViewState": "AgIAADYAAAAAAAAAAIAwwFYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T20:19:51.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-27T20:19:51.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AboneRaporu.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\AboneRaporu.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\AboneRaporu.cs",
@@ -173,19 +155,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\Form1.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Form1.cs [Tasar\u0131m]",
               "RelativeToolTip": "TavParkBJV\\Form1.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T08:28:25.838Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2024-07-28T08:28:25.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "OzelSatis.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\OzelSatis.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\OzelSatis.cs",
@@ -197,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BjvTavPark\\TavParkBJV\\Program.cs",
               "RelativeDocumentMoniker": "TavParkBJV\\Program.cs",

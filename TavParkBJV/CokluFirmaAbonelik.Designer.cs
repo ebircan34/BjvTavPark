@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CokluFirmaAbonelik));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtsehir = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -99,7 +100,6 @@
             this.cmbOdemeKasasi = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -158,6 +158,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(611, 185);
             this.panel2.TabIndex = 1;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(510, 14);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(40, 20);
+            this.txtID.TabIndex = 41;
+            this.txtID.Visible = false;
             // 
             // label23
             // 
@@ -905,14 +913,6 @@
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 28;
             this.label4.Text = "Vardiya:";
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(510, 14);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(40, 20);
-            this.txtID.TabIndex = 41;
-            this.txtID.Visible = false;
             // 
             // CokluFirmaAbonelik
             // 
